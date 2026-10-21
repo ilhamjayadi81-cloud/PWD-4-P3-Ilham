@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Portofolio Interaktif</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+  
+    </style>
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <h1>Portal Informasi & Portofolio Web</h1>
+    </header>
+
+    <!-- NAV (Flexbox) -->
+    <nav>
+        <div class="logo">MyBrand</div>
+        <ul class="menu-nav">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#datadiri">Data Diri</a></li>
+            <li><a href="#galeri">Galeri</a></li>
+        </ul>
+    </nav>
+
+    <!-- SECTION (Grid) -->
+    <section>
+        <article>
+            <!-- Halaman 1: Home -->
+            <div id="home" class="page-content">
+                <h2>Selamat Datang di Halaman Utama</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi assumenda molestias ipsam maxime consequatur? Ab totam laudantium nemo quia. Ipsam iure praesentium quod non totam consectetur in accusamus sed tempore!</p>
+            </div>
+
+            <!-- Halaman 2: Data Diri -->
+            <div id="datadiri" class="page-content">
+                <h2>Data Diri & Profil</h2>
+                <p>Berikut adalah rincian identitas dan data diri lengkap:</p>
+                <table class="table-data">
+                    <tr>
+                        <th>Nama Lengkap</th>
+                        <td>Ahmad Fauzi</td>
+                    </tr>
+                    <tr>
+                        <th>Tempat, Tanggal Lahir</th>
+                        <td>Bogor, 12 Januari 2000</td>
+                    </tr>
+                    <tr>
+                        <th>Pendidikan</th>
+                        <td>S1 Teknik Informatika</td>
+                    </tr>
+                    <tr>
+                        <th>Keahlian</th>
+                        <td>HTML, CSS, JavaScript, Web Design</td>
+                    </tr>
+                    <tr>
+                        <th>Email</th>
+                        <td>ilhamjayadi81@gmail.com</td>
+                    </tr>
+                </table>
+            </div>
+
+            <!-- Halaman 3: Galeri -->
+            <div id="galeri" class="page-content">
+                <h2>Galeri & Proyek Saya</h2>
+                <p>Halaman ini menampilkan daftar proyek karya atau koleksi portofolio yang telah berhasil diselesaikan:</p>
+                <ul style="margin-left: 20px; color: #475569; line-height: 1.8;">
+                    <li><strong>Proyek 1:</strong> Pengembang Sistem Informasi Sekolah Berbasis Web.</li>
+                    <li><strong>Proyek 2:</strong> Desain Landing Page Produk Kreatif UMKM.</li>
+                    <li><strong>Proyek 3:</strong> Pembuatan Aplikasi Kasir Minimarket Sederhana.</li>
+                </ul>
+            </div>
+        </article>
+
+        <!-- ASIDE -->
+        <aside>
+            <h3>Pilih Halaman</h3>
+            <p style="font-size: 0.9rem; margin-bottom: 10px; color: #0369a1;">Klik menu di bawah untuk berpindah konten pada tag &lt;article&gt;:</p>
+            <ul class="sub-menu">
+                <li><a href="#home">Halaman Utama</a></li>
+                <li><a href="#datadiri">Profil Data Diri</a></li>
+                <li><a href="#galeri">Koleksi Galeri</a></li>
+            </ul>
+        </aside>
+    </section>
+
+    <!-- FOOTER -->
+    <footer id="footer">
+        <p>FOOTER</p>
+    </footer>
+
+</body>
+</html>

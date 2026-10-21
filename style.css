@@ -1,0 +1,179 @@
+      * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            padding: 20px;
+            background-color: #f4f4f9;
+        }
+
+        /* 1. HEADER */
+        header {
+            background-color: lightskyblue;
+            color: white;
+            padding: 30px;
+            text-align: center;
+            border-bottom: 3px solid #1d4ed8;
+        }
+
+        /* 2. NAV (Flexbox: Logo di Kiri, Menu di Kanan) */
+        nav {
+            background-color: lightskyblue;
+            color: white;
+            padding: 15px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-top: 1px solid #334155;
+            border-bottom: 1px solid #334155;
+        }
+
+        nav .logo {
+            font-weight: bold;
+            font-size: 1.4rem;
+            letter-spacing: 1px;
+            color: #60a5fa;
+        }
+
+        nav .menu-nav {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        nav .menu-nav li a {
+            color: #f8fafc;
+            text-decoration: none;
+            font-weight: 500;
+            cursor: pointer;
+            padding: 6px 12px;
+            border-radius: 4px;
+            transition: background 0.3s;
+        }
+
+        nav .menu-nav li a:hover {
+            background-color: #1e293b;
+            color: #60a5fa;
+        }
+
+        /* 3 & 4. SECTION (Grid layout) */
+        section {
+            display: grid;
+            grid-template-columns: 2.5fr 1fr;
+            gap: 20px;
+            padding: 20px 0;
+            min-height: 400px;
+        }
+
+        /* ARTICLE */
+        article {
+            background-color: #ffffff;
+            padding: 30px;
+            border: 1px solid #e2e8f0;
+            border-radius: 8px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+
+        article h2 {
+            margin-bottom: 15px;
+            color: #1e293b;
+        }
+
+        article p {
+            line-height: 1.6;
+            color: #475569;
+            margin-bottom: 15px;
+        }
+
+        /* Table Style pada Data Diri */
+        .table-data {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+        }
+
+        .table-data th, .table-data td {
+            border: 1px solid #cbd5e1;
+            padding: 12px 15px;
+            text-align: left;
+        }
+
+        .table-data th {
+            background-color: #f1f5f9;
+            color: #334155;
+            width: 35%;
+        }
+
+        /* ASIDE */
+        aside {
+            background-color: #e0f2fe;
+            padding: 25px;
+            border: 1px solid #bae6fd;
+            border-radius: 8px;
+        }
+
+        aside h3 {
+            color: #0369a1;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #38bdf8;
+            padding-bottom: 5px;
+        }
+
+        .sub-menu {
+            list-style: none;
+        }
+
+        .sub-menu li {
+            margin-bottom: 10px;
+        }
+
+        .sub-menu li a {
+            color: #0284c7;
+            text-decoration: none;
+            font-weight: 500;
+            cursor: pointer;
+            display: block;
+            padding: 8px;
+            border-radius: 4px;
+            background-color: #ffffff;
+            border: 1px solid #bae6fd;
+        }
+
+        .sub-menu li a:hover {
+            background-color: #38bdf8;
+            color: white;
+        }
+
+        /* 5. FOOTER */
+        footer {
+            background-color: #334155;
+            color: #f8fafc;
+            text-align: center;
+            padding: 20px;
+            border-radius: 4px;
+        }
+
+        /* Mengatur perpindahan antar halaman via CSS :target */
+        .page-content {
+            display: none;
+        }
+
+        /* Tampilkan halaman utama secara default */
+        #home, .page-content:target {
+            display: block;
+        }
+
+        /* Sembunyikan #home jika halaman lain diaktifkan */
+        #datadiri:target ~ #home,
+        #galeri:target ~ #home {
+            display: none;
+        }
+
+        @media (max-width: 768px) {
+            section {
+                grid-template-columns: 1fr;
+            }
+        }
