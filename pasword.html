@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Input Password</title>
+  <style>
+    body {
+      background: #fff;
+      padding: 20px;
+      font-family: "Times New Roman", serif;
+    }
+
+    #password {
+      width: 100%;
+      max-width: 500px;
+      box-sizing: border-box;
+      padding: 12px;
+      font-size: 28px;
+      border: 3px solid #4d4d4d;
+      border-radius: 8px;
+    }
+
+    .show-wrapper {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      margin-top: 10px;
+    }
+
+    #showPass {
+      width: 28px;
+      height: 28px;
+      cursor: pointer;
+    }
+
+    .show-wrapper label {
+      font-size: 40px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <input type="password" id="password" value="12345678">
+
+  <div class="show-wrapper">
+    <input type="checkbox" id="showPass" onclick="togglePassword()">
+    <label for="showPass">Show</label>
+  </div>
+
+  <script>
+    function togglePassword() {
+      var input = document.getElementById("password");
+      input.type = input.type === "password" ? "text" : "password";
+    }
+  </script>
+
+</body>
+</h
