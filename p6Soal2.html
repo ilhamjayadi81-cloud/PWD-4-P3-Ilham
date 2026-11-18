@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Tabel Perkalian</title>
+    <style>
+        body  { font-family: "Times New Roman", serif; font-size: 20px; }
+        table { border-collapse: separate; border-spacing: 2px; border: 1px solid #555; }
+        td    { border: 1px solid #555; padding: 3px 4px; }
+        .hijau  { background-color: lime; }
+        .kuning { background-color: yellow; }
+        .cyan   { background-color: cyan; }
+        .putih  { background-color: white; }
+    </style>
+</head>
+<body>
+
+    <script>
+        document.write("<table>");
+
+        // Baris header
+        document.write("<tr><td class='putih'>bilangan</td>");
+        for (var j = 1; j <= 10; j++) {
+            document.write("<td class='hijau'>" + j + "</td>");
+        }
+        document.write("</tr>");
+
+        // Baris isi (perulangan bersarang)
+        for (var i = 1; i <= 10; i++) {
+            document.write("<tr>");
+            document.write("<td class='hijau'>" + i + "</td>");
+            for (var j = 1; j <= 10; j++) {
+                var hasil = i * j;
+                var warna = (hasil % 2 === 0) ? "cyan" : "kuning";
+                document.write("<td class='" + warna + "'>" + hasil + "</td>");
+            }
+            document.write("</tr>");
+        }
+
+        document.write("</table>");
+        
+    </script>
+    Muhamad Ilham Jayadi
+ 
+</body>
+</html>
